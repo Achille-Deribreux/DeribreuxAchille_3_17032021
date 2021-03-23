@@ -1,0 +1,29 @@
+h1{
+    font-size: $h1-size;
+}
+h2{
+    font-size: $h2-size;
+}
+h3{
+    font-size: $h3-size;
+    color: black;
+}
+h4{
+    font-size: $h4-size;
+    color: black;
+}
+p{
+    font-size: $p-size;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    cursor: pointer;
+}
+section{
+    padding: 2rem;
+}
+section i{
+    padding:0.7rem;
+}

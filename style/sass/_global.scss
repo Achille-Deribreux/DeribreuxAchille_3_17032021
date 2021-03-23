@@ -1,0 +1,163 @@
+header{
+    text-align: center;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    img{
+        width: 60%;
+    }
+}
+//to change
+img{
+    max-height: 200px;
+}
+
+form{
+    @include flex-center-center;
+    background-color: darken($light-background-color,9%);
+    height:4rem;
+    input{
+        background-color: darken($light-background-color,9%);
+        border:none;
+    }
+}
+///Section réservation
+.reservation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $light-background-color;
+    p{
+        color:darken($light-background-color,60%);
+        font-size: 1.2rem;
+    }
+    h2,p{
+        text-align: center;
+        margin: 0.7rem 0;
+    }
+    button{
+        margin: 0.7rem 0;
+        @include primary-button;
+    }
+}
+//Section fonctionnement
+.fonctionnement{
+    margin: 1rem 0;
+    .fonctionnement-explications{
+        .fonctionnement-explications__step{
+            @include round-border(30px);
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            background-color: $light-background-color;
+            margin: 1rem 0.5rem;
+            padding:1rem 0.5rem;
+            
+            &>p{
+                width: 17rem;
+                margin:0 0.5rem;
+            }
+            i{
+                @include flex-center-center;
+                font-size: 1.2rem;
+                width: 2rem;
+                color:darken($light-background-color,50%);
+                text-align: center;
+            }
+            .fonctionnement-explications__step--round-purple-background{
+                @include flex-center-center;
+                @include round-border(100%);
+                position: relative;
+                left: -1rem;
+                background-color: $primary-color;
+                min-width: 2rem;
+                min-height: 2rem;
+                p{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+//Restaurants
+.restaurants{
+    background-color: $light-background-color;
+    .restaurants-articles-container{
+        @include flex-center-center;
+        flex-direction: column;
+        figure{
+            position: relative;
+            margin-top: 1rem;
+            @include round-border(1.27rem);
+            box-shadow: 0 0 16px #0000002e;
+            width: 100%; // TO CHANGE POUR DESKTOP
+            img{
+                max-width: 100%;
+                height: 30rem;
+                width: 100%;
+                object-fit:cover;
+                border-top-left-radius: 1.27rem;
+                border-top-right-radius: 1.27rem;
+            }
+            p{
+                background-color: $detail-background-color;
+                padding: 0.4rem;
+                text-align: center;
+                color: darken($detail-background-color,40%);
+                font-weight: 500;
+                position: absolute;
+                top:0.8rem;
+                right: 2rem;
+            }
+            figcaption{
+                margin-bottom: 1rem;
+                margin-top: 0.5rem;
+                padding: 0 1rem;
+                padding-bottom: 0.5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: top;
+                h4{
+                    font-weight: 300;
+                }
+                i{
+                    font-size: 1.5rem;
+                    color:darken($light-background-color,50%);
+                }
+            }
+        }
+    }
+}
+//Footer
+footer{
+    padding: 1rem 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: $dark-background-color;
+    img{
+        max-width: 100%;
+        width: 10rem;
+        filter:(invert(1))
+    }
+    ul{
+        list-style-type:none;
+        color: $text-color-light;
+        li{
+            display: flex;
+            align-items: center;
+            padding: 0.3rem 0;
+            i{
+                width: 1.4rem;
+            }
+            a{
+                color: $text-color-light;
+                text-decoration: none;
+                &:active{
+                    color: $text-color-light;
+                    text-decoration: none;
+                }
+            
+            }
+        }
+    }
+}

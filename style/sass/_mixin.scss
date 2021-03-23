@@ -1,0 +1,19 @@
+@mixin round-border($size : $default-radius){
+    border-radius: $size;
+}
+
+@mixin primary-button{
+    background-color: $primary-color;
+    color: $text-color-light;
+    font-size: large;
+    font-weight: 500;
+    @include round-border(50px);
+    height: $primary-button-height;
+    width: $primary-button-width;
+    border: none;
+};
+@mixin flex-center-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

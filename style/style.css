@@ -1,0 +1,238 @@
+body, figure, p, ul, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: black;
+}
+
+h4 {
+  font-size: 1em;
+  color: black;
+}
+
+p {
+  font-size: 1em;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+section {
+  padding: 2rem;
+}
+
+section i {
+  padding: 0.7rem;
+}
+
+header {
+  text-align: center;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+header img {
+  width: 60%;
+}
+
+img {
+  max-height: 200px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dfdfdf;
+  height: 4rem;
+}
+form input {
+  background-color: #dfdfdf;
+  border: none;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+.reservation p {
+  color: #5d5d5d;
+  font-size: 1.2rem;
+}
+.reservation h2, .reservation p {
+  text-align: center;
+  margin: 0.7rem 0;
+}
+.reservation button {
+  margin: 0.7rem 0;
+  background-color: #9356DC;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 50px;
+  height: 3.5rem;
+  width: 15rem;
+  border: none;
+}
+
+.fonctionnement {
+  margin: 1rem 0;
+}
+.fonctionnement .fonctionnement-explications .fonctionnement-explications__step {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #f6f6f6;
+  margin: 1rem 0.5rem;
+  padding: 1rem 0.5rem;
+}
+.fonctionnement .fonctionnement-explications .fonctionnement-explications__step > p {
+  width: 17rem;
+  margin: 0 0.5rem;
+}
+.fonctionnement .fonctionnement-explications .fonctionnement-explications__step i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  width: 2rem;
+  color: #777777;
+  text-align: center;
+}
+.fonctionnement .fonctionnement-explications .fonctionnement-explications__step .fonctionnement-explications__step--round-purple-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: relative;
+  left: -1rem;
+  background-color: #9356DC;
+  min-width: 2rem;
+  min-height: 2rem;
+}
+.fonctionnement .fonctionnement-explications .fonctionnement-explications__step .fonctionnement-explications__step--round-purple-background p {
+  color: white;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+.restaurants .restaurants-articles-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.restaurants .restaurants-articles-container figure {
+  position: relative;
+  margin-top: 1rem;
+  border-radius: 1.27rem;
+  box-shadow: 0 0 16px #0000002e;
+  width: 100%;
+}
+.restaurants .restaurants-articles-container figure img {
+  max-width: 100%;
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1.27rem;
+  border-top-right-radius: 1.27rem;
+}
+.restaurants .restaurants-articles-container figure p {
+  background-color: #99e2d0;
+  padding: 0.4rem;
+  text-align: center;
+  color: #278870;
+  font-weight: 500;
+  position: absolute;
+  top: 0.8rem;
+  right: 2rem;
+}
+.restaurants .restaurants-articles-container figure figcaption {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+.restaurants .restaurants-articles-container figure figcaption h4 {
+  font-weight: 300;
+}
+.restaurants .restaurants-articles-container figure figcaption i {
+  font-size: 1.5rem;
+  color: #777777;
+}
+
+footer {
+  padding: 1rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #353535;
+}
+footer img {
+  max-width: 100%;
+  width: 10rem;
+  filter: invert(1);
+}
+footer ul {
+  list-style-type: none;
+  color: white;
+}
+footer ul li {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0;
+}
+footer ul li i {
+  width: 1.4rem;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer ul li a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-header a {
+  position: absolute;
+  right: 400px;
+}
+.menu-header a i {
+  font-size: 2rem;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

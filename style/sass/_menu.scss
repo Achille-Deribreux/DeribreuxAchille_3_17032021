@@ -1,0 +1,12 @@
+.menu-header{
+    position: relative;
+    @include flex-center-center;
+    a{
+        position: absolute;
+        right: 400px;
+        i{
+            font-size: 2rem;
+            color: black;
+        }
+    }
+}
