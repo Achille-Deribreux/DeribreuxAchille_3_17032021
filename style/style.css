@@ -1,4 +1,4 @@
-body, figure, p, ul, h2, h3, h4 {
+body, figure, p, h1, ul, h2, h3, h4 {
   margin: 0;
   padding: 0;
 }
@@ -23,6 +23,7 @@ h3 {
 h4 {
   font-size: 1em;
   color: black;
+  font-weight: 300;
 }
 
 p {
@@ -38,17 +39,28 @@ a {
 }
 
 section {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 section i {
   padding: 0.7rem;
 }
 
+button {
+  background-color: #9356DC;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 50px;
+  height: 3.5rem;
+  width: 15rem;
+  border: none;
+}
+
 header {
   text-align: center;
   margin: 0.5rem auto;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 header img {
   width: 60%;
@@ -86,14 +98,6 @@ form input {
 }
 .reservation button {
   margin: 0.7rem 0;
-  background-color: #9356DC;
-  color: white;
-  font-size: large;
-  font-weight: 500;
-  border-radius: 50px;
-  height: 3.5rem;
-  width: 15rem;
-  border: none;
 }
 
 .fonctionnement {
@@ -179,9 +183,6 @@ form input {
   justify-content: space-between;
   align-items: top;
 }
-.restaurants .restaurants-articles-container figure figcaption h4 {
-  font-weight: 300;
-}
 .restaurants .restaurants-articles-container figure figcaption i {
   font-size: 1.5rem;
   color: #777777;
@@ -221,18 +222,66 @@ footer ul li a:active {
 }
 
 .menu-header {
-  position: relative;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.menu-header div {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-.menu-header a {
+.menu-header div a {
   position: absolute;
-  right: 400px;
+  right: 370px;
 }
-.menu-header a i {
-  font-size: 2rem;
+.menu-header div a i {
+  font-size: 1.6rem;
   color: black;
+}
+.menu-header figure {
+  width: 100%;
+}
+.menu-header figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carte {
+  background-color: #f6f6f6;
+  padding: 0;
+}
+.carte > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.carte > div h1 {
+  font-family: "Shrikhand", cursive;
+}
+.carte > div i {
+  font-size: 1.3rem;
+}
+.carte button {
+  margin: 2.5rem 0;
+}
+
+.carte__part h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0.3rem;
+}
+.carte__part article {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0.9rem;
+  margin: 1rem 0;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

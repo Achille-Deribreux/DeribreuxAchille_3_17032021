@@ -11,6 +11,7 @@ h3{
 h4{
     font-size: $h4-size;
     color: black;
+    font-weight: 300;
 }
 p{
     font-size: $p-size;
@@ -22,8 +23,11 @@ a{
     cursor: pointer;
 }
 section{
-    padding: 2rem;
+    padding: 1rem;
 }
 section i{
     padding:0.7rem;
+}
+button{
+    @include primary-button;
 }

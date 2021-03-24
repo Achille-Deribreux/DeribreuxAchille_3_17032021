@@ -1,7 +1,7 @@
 header{
     text-align: center;
     margin: 0.5rem auto;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     img{
         width: 60%;
     }
@@ -36,7 +36,6 @@ form{
     }
     button{
         margin: 0.7rem 0;
-        @include primary-button;
     }
 }
 //Section fonctionnement
@@ -116,9 +115,6 @@ form{
                 display: flex;
                 justify-content: space-between;
                 align-items: top;
-                h4{
-                    font-weight: 300;
-                }
                 i{
                     font-size: 1.5rem;
                     color:darken($light-background-color,50%);
