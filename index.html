@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./images/logo/favicon.ico"/>
     </head>
     <!--FIN HEAD-->
 
@@ -16,7 +17,7 @@
     <body>
         <!--DEBUT HEADER-->
         <header class="main-header">
-            <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood!"/>
+            <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood!" class="logo"/>
         </header>
         <!--FIN HEADER-->
 
@@ -41,29 +42,34 @@
             <section class="fonctionnement">
                 <h2>Fonctionnement</h2>
                 <div class="fonctionnement-explications">
-                    <div class="fonctionnement-explications__step">
-                        <div class="fonctionnement-explications__step--round-purple-background">
-                            <p>1</p>
+                    <a>
+                        <div class="fonctionnement-explications__step">
+                            <div class="fonctionnement-explications__step--round-purple-background">
+                                <p>1</p>
+                            </div>
+                            <i class="fas fa-mobile-alt"></i>
+                            <p>Choisissez un restaurant</p>
                         </div>
-                        <i class="fas fa-mobile-alt"></i>
-                        <p>Choisissez un restaurant</p>
-                    </div>
+                    </a>
 
-                    <div class="fonctionnement-explications__step">
-                        <div class="fonctionnement-explications__step--round-purple-background">
-                            <p>2</p>
+                    <a>
+                        <div class="fonctionnement-explications__step">
+                            <div class="fonctionnement-explications__step--round-purple-background">
+                                <p>2</p>
+                            </div>
+                            <i class="fas fa-list"></i>
+                            <p>Composez votre menu</p>
                         </div>
-                        <i class="fas fa-list"></i>
-                        <p>Composez votre menu</p>
-                    </div>
-
-                    <div class="fonctionnement-explications__step">
-                        <div class="fonctionnement-explications__step--round-purple-background">
-                            <p>3</p>
+                    </a>
+                    <a>
+                        <div class="fonctionnement-explications__step">
+                            <div class="fonctionnement-explications__step--round-purple-background">
+                                <p>3</p>
+                            </div>
+                            <i class="fas fa-store"></i>
+                            <p>Dégustez au restaurant</p>
                         </div>
-                        <i class="fas fa-store"></i>
-                        <p>Dégustez au restaurant</p>
-                    </div>
+                    </a>
                 </div>
             </section>
             <!--FIN SECTION FONCTIONNEMENT-->
@@ -147,7 +153,7 @@
             <img src="images/logo/ohmyfood.png">
             <ul>
                 <li><i class="fas fa-utensils"></i><p>Proposer un restaurant</p></li>
-                <li><i class="fas fa-hands-helping"></i><p>Devenir partenaire</p></li>
+                <li><i class="fas fa-hands-helping"></i><p id="devenir-partenaire">Devenir partenaire</p></li>
                 <li><p>Mentions légales</p></li>
                 <li> <p><a href="mailto:hello@ohmyfood.test">Contact</a></p></li>
             </ul>

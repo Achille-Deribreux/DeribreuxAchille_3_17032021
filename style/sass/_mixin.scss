@@ -3,7 +3,7 @@
 }
 
 @mixin primary-button{
-    background-color: $primary-color;
+    @include linear-gradient($secondary-color,$primary-color);
     color: $text-color-light;
     font-size: large;
     font-weight: 500;
@@ -16,4 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@mixin linear-gradient($from,$to){
+    background-image: linear-gradient($from,$to);
 }

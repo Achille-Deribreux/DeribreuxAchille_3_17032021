@@ -1,0 +1,79 @@
+@media screen and (min-width:768px){
+    .logo{
+        max-width: 50%;
+    }
+    form{
+        max-width: 50%;
+        margin: 0 auto 2rem auto;
+        @include flex-center-center;
+        @include round-border();
+        i{
+            padding:0.6rem;
+            font-size: 1.6rem;
+        }
+        input{
+            padding: 0.6rem;
+            width: 35%;
+            height: 70%;
+            font-size: larger;
+        }
+    }
+    .fonctionnement{
+        h2{
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        .fonctionnement-explications{
+            .fonctionnement-explications__step{
+                max-width: 70%;
+                margin: 2rem auto;
+            }
+        }
+    }
+    .restaurants{
+        h2{
+            margin-left: 1rem;
+        }
+        .restaurants-articles-container{
+            flex-direction: row;
+            flex-wrap: wrap;
+            a{
+                width: 48%;
+                margin: 0rem 1%;
+            }
+        }
+
+    }
+    footer{
+        align-items: center;
+        img{
+            width: 15rem;
+        }
+        li{
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+} 
+@media screen and (min-width:1200px){
+    .reservation{
+        button{
+            font-size:x-large;
+            width:22rem;
+            height: 4.5rem;
+        }
+    }
+    .fonctionnement{
+        .fonctionnement-explications{
+            display: flex;
+            justify-content: space-around;
+
+            .fonctionnement-explications__step{
+                height: 4rem;
+                margin: 0;
+                max-width: 100%;
+            }
+        }
+    }
+}

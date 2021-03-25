@@ -47,7 +47,7 @@ section i {
 }
 
 button {
-  background-color: #9356DC;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   color: white;
   font-size: large;
   font-weight: 500;
@@ -59,8 +59,8 @@ button {
 
 header {
   text-align: center;
-  margin: 0.5rem auto;
-  padding: 0.5rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 header img {
   width: 60%;
@@ -111,10 +111,13 @@ form input {
   background-color: #f6f6f6;
   margin: 1rem 0.5rem;
   padding: 1rem 0.5rem;
+  box-shadow: 0 0 16px #0000002e;
 }
 .fonctionnement .fonctionnement-explications .fonctionnement-explications__step > p {
   width: 17rem;
   margin: 0 0.5rem;
+  font-weight: 500;
+  font-size: large;
 }
 .fonctionnement .fonctionnement-explications .fonctionnement-explications__step i {
   display: flex;
@@ -138,6 +141,7 @@ form input {
 }
 .fonctionnement .fonctionnement-explications .fonctionnement-explications__step .fonctionnement-explications__step--round-purple-background p {
   color: white;
+  font-weight: 500;
 }
 
 .restaurants {
@@ -233,7 +237,7 @@ footer ul li a:active {
 }
 .menu-header div a {
   position: absolute;
-  right: 370px;
+  left: 7%;
 }
 .menu-header div a i {
   font-size: 1.6rem;
@@ -248,9 +252,17 @@ footer ul li a:active {
   object-fit: cover;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .carte {
   background-color: #f6f6f6;
+  margin-top: -1.3rem;
+  border-radius: 20px;
   padding: 0;
+  z-index: 2;
 }
 .carte > div {
   display: flex;
@@ -273,6 +285,13 @@ footer ul li a:active {
   font-weight: 300;
   margin-bottom: 0.3rem;
 }
+.carte__part h2::after {
+  content: "";
+  padding-top: 2px;
+  width: 2.8rem;
+  display: block;
+  border-bottom: 2px solid #99e2d0;
+}
 .carte__part article {
   display: flex;
   justify-content: space-between;
@@ -282,6 +301,81 @@ footer ul li a:active {
   padding: 0.9rem;
   margin: 1rem 0;
   font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    max-width: 50%;
+  }
+
+  form {
+    max-width: 50%;
+    margin: 0 auto 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  form i {
+    padding: 0.6rem;
+    font-size: 1.6rem;
+  }
+  form input {
+    padding: 0.6rem;
+    width: 35%;
+    height: 70%;
+    font-size: larger;
+  }
+
+  .fonctionnement h2 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .fonctionnement .fonctionnement-explications .fonctionnement-explications__step {
+    max-width: 70%;
+    margin: 2rem auto;
+  }
+
+  .restaurants h2 {
+    margin-left: 1rem;
+  }
+  .restaurants .restaurants-articles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurants .restaurants-articles-container a {
+    width: 48%;
+    margin: 0rem 1%;
+  }
+
+  footer {
+    align-items: center;
+  }
+  footer img {
+    width: 15rem;
+  }
+  footer li {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reservation button {
+    font-size: x-large;
+    width: 22rem;
+    height: 4.5rem;
+  }
+
+  .fonctionnement .fonctionnement-explications {
+    display: flex;
+    justify-content: space-around;
+  }
+  .fonctionnement .fonctionnement-explications .fonctionnement-explications__step {
+    height: 4rem;
+    margin: 0;
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

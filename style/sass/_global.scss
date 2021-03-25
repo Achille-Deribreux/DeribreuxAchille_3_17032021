@@ -1,7 +1,7 @@
 header{
     text-align: center;
-    margin: 0.5rem auto;
-    padding: 0.5rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
     img{
         width: 60%;
     }
@@ -50,10 +50,13 @@ form{
             background-color: $light-background-color;
             margin: 1rem 0.5rem;
             padding:1rem 0.5rem;
+            box-shadow: 0 0 16px #0000002e;
             
             &>p{
                 width: 17rem;
                 margin:0 0.5rem;
+                font-weight: 500;
+                font-size: large
             }
             i{
                 @include flex-center-center;
@@ -72,6 +75,7 @@ form{
                 min-height: 2rem;
                 p{
                     color: white;
+                    font-weight: 500;
                 }
             }
         }
