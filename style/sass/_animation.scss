@@ -3,3 +3,29 @@
       animation: fadein $fade-in-delay * $i;
     }
   }
+.like-container {
+    position: relative;
+
+    .hover-like {
+      right: 0rem;
+      opacity: 0;
+      position: absolute;
+    }
+
+    &:hover {
+      overflow: hidden;
+  
+      .like {
+        opacity: 0;
+        transition: .5s 0s ease;
+      }
+  
+      .hover-like {
+        color: $primary-color;
+        font-weight: 900;
+        opacity: 1;
+        transition: .5s 0s ease;
+        z-index: 2;
+      }
+    }
+  }

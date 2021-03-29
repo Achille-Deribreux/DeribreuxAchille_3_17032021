@@ -425,4 +425,27 @@ body {
   animation: fadein 4s;
 }
 
+.like-container {
+  position: relative;
+}
+.like-container .hover-like {
+  right: 0rem;
+  opacity: 0;
+  position: absolute;
+}
+.like-container:hover {
+  overflow: hidden;
+}
+.like-container:hover .like {
+  opacity: 0;
+  transition: 0.5s 0s ease;
+}
+.like-container:hover .hover-like {
+  color: #9356DC;
+  font-weight: 900;
+  opacity: 1;
+  transition: 0.5s 0s ease;
+  z-index: 2;
+}
+
 /*# sourceMappingURL=style.css.map */
