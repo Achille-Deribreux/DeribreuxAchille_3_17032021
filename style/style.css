@@ -377,5 +377,52 @@ body {
     max-width: 100%;
   }
 }
+@keyframes fadein {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.fade-1 {
+  animation: fadein 0.4s;
+}
+
+.fade-2 {
+  animation: fadein 0.8s;
+}
+
+.fade-3 {
+  animation: fadein 1.2s;
+}
+
+.fade-4 {
+  animation: fadein 1.6s;
+}
+
+.fade-5 {
+  animation: fadein 2s;
+}
+
+.fade-6 {
+  animation: fadein 2.4s;
+}
+
+.fade-7 {
+  animation: fadein 2.8s;
+}
+
+.fade-8 {
+  animation: fadein 3.2s;
+}
+
+.fade-9 {
+  animation: fadein 3.6s;
+}
+
+.fade-10 {
+  animation: fadein 4s;
+}
 
 /*# sourceMappingURL=style.css.map */

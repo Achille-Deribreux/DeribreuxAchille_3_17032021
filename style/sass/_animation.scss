@@ -1,0 +1,5 @@
+@for $i from 1 through 10 {
+    .fade-#{$i} {
+      animation: fadein $fade-in-delay * $i;
+    }
+  }
