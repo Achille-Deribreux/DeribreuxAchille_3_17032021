@@ -3,7 +3,7 @@ header{
     padding-top: 1rem;
     padding-bottom: 1.5rem;
     img{
-        width: 60%;
+        width: 40%;
     }
 }
 
@@ -114,7 +114,6 @@ form{
                 padding-bottom: 0.5rem;
                 display: flex;
                 justify-content: space-between;
-                align-items: top;
                 i{
                     font-size: 1.5rem;
                     color:darken($light-background-color,50%);
@@ -128,7 +127,6 @@ footer{
     padding: 1rem 0 0 1rem;
     display: flex;
     flex-direction: column;
-    align-items: left;
     background-color: $dark-background-color;
     img{
         max-width: 100%;

@@ -61,13 +61,19 @@ img {
   max-height: 500px;
 }
 
+header, main {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
+
 header {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
 }
 header img {
-  width: 60%;
+  width: 40%;
 }
 
 form {
@@ -185,7 +191,6 @@ form input {
   padding-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
-  align-items: top;
 }
 .restaurants .restaurants-articles-container figure figcaption i {
   font-size: 1.5rem;
@@ -196,7 +201,6 @@ footer {
   padding: 1rem 0 0 1rem;
   display: flex;
   flex-direction: column;
-  align-items: left;
   background-color: #353535;
 }
 footer img {
@@ -262,7 +266,7 @@ body {
   margin-top: -1.3rem;
   border-radius: 20px;
   padding: 0;
-  z-index: 2;
+  z-index: 0;
 }
 .carte > div {
   display: flex;
@@ -305,7 +309,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .logo {
-    max-width: 50%;
+    max-width: 20%;
   }
 
   form {
@@ -316,13 +320,19 @@ body {
     justify-content: center;
     border-radius: 20px;
   }
-  form i {
+  form div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form div i {
     padding: 0.6rem;
     font-size: 1.6rem;
   }
-  form input {
+  form div input {
     padding: 0.6rem;
-    width: 35%;
+    width: 8rem;
     height: 70%;
     font-size: larger;
   }
@@ -412,6 +422,43 @@ body {
   }
   to {
     transform: translateX(0);
+  }
+}
+@keyframes spinner-appear {
+  0% {
+    opacity: 0.7;
+    z-index: 1;
+  }
+  10% {
+    opacity: 1;
+    z-index: 1;
+  }
+  90% {
+    opacity: 0.8;
+    z-index: 1;
+  }
+  94% {
+    opacity: 0.6;
+    z-index: 1;
+  }
+  98% {
+    opacity: 0.3;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 1;
+  }
+}
+@keyframes spinner-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .fade-1 {
@@ -510,6 +557,60 @@ body {
 }
 .carte__part article:hover .check-circle-container .check-circle {
   animation: check-box-turn ease 0.6s;
+}
+
+.spinner-container {
+  animation: spinner-appear 2s 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  opacity: 0;
+}
+.spinner-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+  background-color: #f6f6f6;
+}
+.spinner-container .spinner-container__extern-border {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px #99e2d0 solid;
+  width: 7rem;
+  height: 7rem;
+}
+.spinner-container .spinner-container__extern-border .spinner-container__loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  animation: spinner-spin 2s linear infinite;
+  border-right: 10px #9356DC solid;
+  border-left: 10px #9356DC solid;
+  border-top: 10px #FF79DA solid;
+  border-bottom: 10px #FF79DA solid;
+  width: 6rem;
+  height: 6rem;
+}
+.spinner-container .spinner-container__extern-border .spinner-container__loader .spinner-container__intern-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  border: 10px #99e2d0 solid;
+  border-radius: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
