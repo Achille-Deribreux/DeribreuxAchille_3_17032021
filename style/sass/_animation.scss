@@ -1,8 +1,11 @@
+// Menu Fade In
 @for $i from 1 through 10 {
     .fade-#{$i} {
       animation: fadein $fade-in-delay * $i;
     }
   }
+
+// Like on hover
 .like-container {
     position: relative;
 
@@ -29,3 +32,46 @@
       }
     }
   }
+
+//Add to card
+//Design
+.price-circle-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .price{
+    padding: 1.5rem;
+  }
+  .check-circle-container{
+    background-color: $tertiary-color;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding:10px;
+    display: none;
+    .check-circle{
+      color:$light-background-color;
+      font-size: 1.5rem;
+    }
+  }
+}
+//hover animation
+.carte__part{
+  article{
+    &:hover{
+      .price {
+        animation: slide-in-price ease $check-circle-delay;
+        animation-fill-mode: forwards;
+      }
+      .check-circle-container {
+        animation: slide-in-check-box ease $check-circle-delay;
+        animation-fill-mode: forwards;
+        display: block;
+        overflow: hidden;
+        .check-circle {
+          animation: check-box-turn ease $check-circle-delay;
+        }
+      }
+    }
+  }
+}

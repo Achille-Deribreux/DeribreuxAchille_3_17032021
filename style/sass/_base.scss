@@ -31,3 +31,6 @@ section i{
 button{
     @include primary-button;
 }
+img{
+    max-height: 500px;
+}

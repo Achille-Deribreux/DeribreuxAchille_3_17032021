@@ -6,10 +6,6 @@ header{
         width: 60%;
     }
 }
-//to change
-img{
-    max-height: 200px;
-}
 
 form{
     @include flex-center-center;
@@ -95,7 +91,7 @@ form{
             width: 100%; // TO CHANGE POUR DESKTOP
             img{
                 max-width: 100%;
-                height: 30rem;
+                height: 14rem;
                 width: 100%;
                 object-fit:cover;
                 border-top-left-radius: 1.27rem;

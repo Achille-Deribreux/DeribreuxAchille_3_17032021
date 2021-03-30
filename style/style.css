@@ -57,6 +57,10 @@ button {
   border: none;
 }
 
+img {
+  max-height: 500px;
+}
+
 header {
   text-align: center;
   padding-top: 1rem;
@@ -64,10 +68,6 @@ header {
 }
 header img {
   width: 60%;
-}
-
-img {
-  max-height: 200px;
 }
 
 form {
@@ -162,7 +162,7 @@ form input {
 }
 .restaurants .restaurants-articles-container figure img {
   max-width: 100%;
-  height: 30rem;
+  height: 14rem;
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 1.27rem;
@@ -295,12 +295,12 @@ body {
 .carte__part article {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   background-color: white;
   border-radius: 20px;
-  padding: 0.9rem;
   margin: 1rem 0;
   font-weight: 600;
+  padding-left: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -385,44 +385,73 @@ body {
     transform: scale(1);
   }
 }
+@keyframes check-box-turn {
+  0% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(-45deg) scale(1.15);
+  }
+  100% {
+    transform: rotate(5deg) scale(1);
+  }
+}
+@keyframes slide-in-check-box {
+  from {
+    opacity: 0.5;
+    transform: translateX(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slide-in-price {
+  from {
+    transform: translateX(2rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .fade-1 {
-  animation: fadein 0.4s;
+  animation: fadein 0.3s;
 }
 
 .fade-2 {
-  animation: fadein 0.8s;
+  animation: fadein 0.6s;
 }
 
 .fade-3 {
-  animation: fadein 1.2s;
+  animation: fadein 0.9s;
 }
 
 .fade-4 {
-  animation: fadein 1.6s;
+  animation: fadein 1.2s;
 }
 
 .fade-5 {
-  animation: fadein 2s;
+  animation: fadein 1.5s;
 }
 
 .fade-6 {
-  animation: fadein 2.4s;
+  animation: fadein 1.8s;
 }
 
 .fade-7 {
-  animation: fadein 2.8s;
+  animation: fadein 2.1s;
 }
 
 .fade-8 {
-  animation: fadein 3.2s;
+  animation: fadein 2.4s;
 }
 
 .fade-9 {
-  animation: fadein 3.6s;
+  animation: fadein 2.7s;
 }
 
 .fade-10 {
-  animation: fadein 4s;
+  animation: fadein 3s;
 }
 
 .like-container {
@@ -446,6 +475,41 @@ body {
   opacity: 1;
   transition: 0.5s 0s ease;
   z-index: 2;
+}
+
+.price-circle-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.price-circle-container .price {
+  padding: 1.5rem;
+}
+.price-circle-container .check-circle-container {
+  background-color: #99E2D0;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px;
+  display: none;
+}
+.price-circle-container .check-circle-container .check-circle {
+  color: #f6f6f6;
+  font-size: 1.5rem;
+}
+
+.carte__part article:hover .price {
+  animation: slide-in-price ease 0.6s;
+  animation-fill-mode: forwards;
+}
+.carte__part article:hover .check-circle-container {
+  animation: slide-in-check-box ease 0.6s;
+  animation-fill-mode: forwards;
+  display: block;
+  overflow: hidden;
+}
+.carte__part article:hover .check-circle-container .check-circle {
+  animation: check-box-turn ease 0.6s;
 }
 
 /*# sourceMappingURL=style.css.map */

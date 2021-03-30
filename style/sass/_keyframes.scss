@@ -7,3 +7,37 @@
       transform: scale(1);
     }
   }
+  // Test _________________________
+  @keyframes check-box-turn {
+    0% {
+      transform: rotate(-90deg);
+    }
+    50% {
+      transform: rotate(-45deg) scale(1.15);
+    }
+    100% {
+      transform: rotate(5deg) scale(1);
+    }
+  }
+  
+  // Checkbox slide animation
+  @keyframes slide-in-check-box {
+    from {
+      opacity: .5;
+      transform: translateX(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  //After checkboxbox animate price
+  @keyframes slide-in-price {
+    from {
+      transform: translateX(2rem);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }

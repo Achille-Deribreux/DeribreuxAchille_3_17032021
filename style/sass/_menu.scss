@@ -66,11 +66,11 @@ body{
     article{
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         background-color: white;
         @include round-border();
-        padding: 0.9rem;
         margin:1rem 0;
         font-weight: 600;
+        padding-left: 1rem;
     }
 }
