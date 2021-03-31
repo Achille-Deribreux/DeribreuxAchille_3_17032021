@@ -59,8 +59,13 @@
             justify-content: center;
         }
     }
+    .carte{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
 } 
-@media screen and (min-width:1200px){
+@media screen and (min-width:1250px){
     .reservation{
         button{
             font-size:x-large;

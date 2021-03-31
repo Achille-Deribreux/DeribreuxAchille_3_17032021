@@ -4,13 +4,19 @@
 
 @mixin primary-button{
     @include linear-gradient($secondary-color,$primary-color);
+    @include box-shadow;
     color: $text-color-light;
+    cursor: pointer;
     font-size: large;
     font-weight: 500;
     @include round-border(50px);
     height: $primary-button-height;
     width: $primary-button-width;
     border: none;
+    &:hover{
+        @include linear-gradient(lighten($secondary-color,1%),lighten($primary-color,2%) );
+        @include box-shadow($dark-background-color);
+    }
 };
 @mixin flex-center-center{
     display: flex;
@@ -19,4 +25,7 @@
 }
 @mixin linear-gradient($from,$to){
     background-image: linear-gradient($from,$to);
+}
+@mixin box-shadow($shadow-color:$shadow-color,$shadow:$shadow){
+    box-shadow: 0 0 $shadow $shadow-color;
 }

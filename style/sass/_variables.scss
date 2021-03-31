@@ -2,18 +2,18 @@
 $primary-color: #9356DC;
 $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
-$text-color-light:white;
-$text-color-dark:black;
+$text-color-light:#ffffff;
+$text-color-dark:#000000;
 $light-background-color:#f6f6f6;
 $dark-background-color:#353535;
 $detail-background-color:#99e2d0;
 
 //Font-sizes
-$h1-size: 2em;
-$h2-size: 1.8em;
-$h3-size: 1.2em;
-$h4-size: 1em;
-$p-size: 1em;
+$h1-size: 1.8rem;
+$h2-size: 1.8rem;
+$h3-size: 1.2rem;
+$h4-size: 1rem;
+$p-size: 1rem;
 
 //primary button size
 $primary-button-width : 15rem;
@@ -25,3 +25,7 @@ $default-radius:20px;
 //Animations
 $fade-in-delay: .3s;
 $check-circle-delay:.6s;
+
+//box-shadow
+$shadow: 16px;
+$shadow-color:#0000002e;
