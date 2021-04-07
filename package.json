@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "sass":"sass --watch ./style/sass/main.scss:./style/style.css",
-    "prefix":"postcss ./style/style.css --use autoprefixer -d./style/prefixedcss.css"
+    "prefix":"postcss ./style/style.css --use autoprefixer -d ./style"
   },
   "author": "",
   "license": "ISC",
-  "browserlist":"last 4 versions"
+  "browserslist":"last 4 versions"
 }

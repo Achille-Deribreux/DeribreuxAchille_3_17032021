@@ -22,6 +22,9 @@ body{
 a{
     cursor: pointer;
 }
+a:hover{
+    transform: scale(1.01);
+}
 section{
     padding: 1rem;
 }
