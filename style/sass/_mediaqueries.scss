@@ -86,3 +86,14 @@
         }
     }
 }
+@media screen and (min-width:1440px){
+    .restaurants{
+        .restaurants-articles-container{
+            figure{
+                img{
+                    height: 20rem;
+                }
+            }
+        }
+    }
+}
